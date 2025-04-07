@@ -40,6 +40,11 @@ div.top {
     justify-content: space-between;
 }
 
+div.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
 h1.time {
     text-align: center;
     font-size: 7rem;
