@@ -57,3 +57,15 @@ navigator.geolocation.getCurrentPosition(position => {
         })
         .catch(err => console.error(err))
 });
+
+fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${NEWS_API}`)
+  .then(res => res.json())
+  .then(data =>{
+
+    console.log(data)
+    // data.articles[0].title
+    // data.articles[0].url
+    // data.articles[0].description
+
+
+  })
