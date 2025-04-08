@@ -75,3 +75,15 @@ fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=
     document.querySelector("#news-list").innerHTML += articles
 
   })
+
+// const options = {method: 'GET', headers: {accept: 'application/json'}};
+
+fetch(`https://api.exchangerate.host/live?access_key=${EXCHANGE_API}&currencies=USD,JPY`)
+  .then(res => res.json())
+  .then(data => {
+    console.log(data.quotes.USDJPY)
+    document.querySelector("#exchange").innerHTML = `
+      <p>1 USD = ${data.quotes.USDJPY.toFixed(2)} JPY</p>
+    `
+
+  })

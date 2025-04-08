@@ -76,6 +76,8 @@ div#weather {
     justify-content: flex-end;
     align-self: flex-start;
     margin-top: -20px;
+    padding-right: 15px;;
+
 
 }
 
