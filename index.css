@@ -105,3 +105,8 @@ p.weather-temp {
 #news{
   width:600px;
 }
+
+#exchange{
+  font-size: 20px;
+  font-style: italic;
+}
