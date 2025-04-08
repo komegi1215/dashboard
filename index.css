@@ -38,6 +38,7 @@ main {
 div.top {
     display: flex;
     justify-content: space-between;
+
 }
 
 div.bottom{
@@ -47,7 +48,7 @@ div.bottom{
 
 h1.time {
     text-align: center;
-    font-size: 7rem;
+    font-size: 5rem;
 }
 
 div#crypto {
@@ -75,6 +76,7 @@ div#weather {
     justify-content: flex-end;
     align-self: flex-start;
     margin-top: -20px;
+
 }
 
 div#weather > img {
@@ -92,4 +94,12 @@ p.weather-temp {
     margin: 0;
     font-size: 1.7rem;
     margin-left: -10px;
+}
+
+#link {
+  color: pink;
+}
+
+#news{
+  width:600px;
 }

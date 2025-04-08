@@ -62,10 +62,16 @@ fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=
   .then(res => res.json())
   .then(data =>{
 
-    console.log(data)
-    // data.articles[0].title
-    // data.articles[0].url
-    // data.articles[0].description
+    const articles = data.articles
+    .slice(0, 5)
+    .map(article => {
+      return`
 
+          <h3>${article.title}</h3>
+          <a href="${article.url}" target="_blank" id="link">${article.url}</a>
+      `
+    }).join("")
+
+    document.querySelector("#news-list").innerHTML += articles
 
   })
